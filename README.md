@@ -1,6 +1,6 @@
 `#js` `#dom` `#assembler-school` `#master-in-software-engineering`
 
-# Assembler School: javascript dom exercises
+# Assembler Institute: JavaScript DOM exercises
 
 ## Getting Started
 
@@ -12,12 +12,11 @@ $ git clone https://github.com/assembler-institute/javascript-dom-exercises.git
 
 ## Exercises
 
-You will have open the exercises html file in /src folder and then finish coding the needed functions. Open the file in a browser to see the exercise instructions.
+You will have to open the HTML exercises file in "/src" folder and then finish the code of the needed functions. Open the file in a browser to see the exercise instructions.
 
 _Keep in mind that the files to which you must implement your solution are those found inside the [src](./src) folder_
 
-When you have finished the function, open the html in the browser and in the browser console (developer tools), execute the corresponding validation function
-to to check your solution.
+When you have finished the exercise, open the HTML in the browser and in the browser console (Developer Tools), and execute the corresponding validation function to check your solution.
 
 ## Author <!-- omit in toc -->
 
