@@ -1,4 +1,4 @@
-`#js` `#dom` `#assembler-school` `#master-in-software-engineering`
+`#js` `#javascript` `#dom` `#assembler-institute` `#master-in-software-development`
 
 # Assembler Institute: JavaScript DOM exercises
 
