@@ -7,7 +7,7 @@
 First, you will need to clone or download and extract the repo:
 
 ```bash
-$ git clone https://github.com/assembler-school/javascript-dom.git
+$ git clone https://github.com/assembler-institute/javascript-dom-exercises.git
 ```
 
 ## Exercises
@@ -17,7 +17,7 @@ You will have open the exercises html file in /src folder and then finish coding
 _Keep in mind that the files to which you must implement your solution are those found inside the [src](./src) folder_
 
 When you have finished the function, open the html in the browser and in the browser console (developer tools), execute the corresponding validation function
-to the check your solution.
+to to check your solution.
 
 ## Author <!-- omit in toc -->
 
