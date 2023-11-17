@@ -61,7 +61,17 @@
        *
        * Finish the code of the function
        */
-      function changeTextContent() {}
+      function changeTextContent() {
+
+        const allSpans = [...document.getElementsByTagName('span')]
+        
+        allSpans.forEach( each => {
+          each.innerText = each.innerText + " changed"
+          each.style.color = 'blue'
+        })
+
+
+      }
 
       /**
        * JavaScript Exercises - 02
