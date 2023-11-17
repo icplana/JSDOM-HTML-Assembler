@@ -45,7 +45,14 @@
        *
        * Finish the code of the function
        */
-      function changeStyles() {}
+      function changeStyles() {
+        let weekdayItem = [...document.getElementsByClassName('weekday-item')]
+        weekdayItem.forEach( each => {
+          each.style.fontWeight = 'bold'
+          each.style.fontSize = "24px"
+        })
+
+      }
 
       /**
        * JavaScript Exercises - 03

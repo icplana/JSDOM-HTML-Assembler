@@ -66,7 +66,12 @@
        *
        * Finish the code of the function
        */
-      function styleContent() {}
+      function styleContent() {
+        const listContainer = document.querySelector('.list-container');
+        const weekdayItems = listContainer.querySelectorAll('.weekday-item')
+        console.log(weekdayItems)
+        weekdayItems.forEach( e => e.style.backgroundColor = 'hotpink')
+      }
 
       /**
        * JavaScript Exercises - 05
