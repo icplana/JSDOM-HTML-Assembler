@@ -46,7 +46,7 @@
       <!--  -->
       <!-- Add the inline `onclick` event listener ⬇️ -->
       <!--  -->
-      <button id="add_elements">
+      <button id="add_elements" onclick="addElements()">
         Add new elements
       </button>
       <div class="ex-wrapper">
@@ -63,7 +63,18 @@
        *
        * Finish the code of the function
        */
-      function addElements() {}
+      let container = document.querySelector('.list-container')
+      function addElements() {
+        let thursday = document.createElement('li')
+        thursday.innerText = 'Thursday'
+        thursday.classList.add('weekday-item')
+        let friday = document.createElement('li')
+        friday.innerText = 'Friday'
+        friday.classList.add('weekday-item')
+        container.appendChild(thursday)
+        container.appendChild(friday)
+
+      }
     </script>
     <script src="./__tests__/exercise-10.js"></script>
   </body>
