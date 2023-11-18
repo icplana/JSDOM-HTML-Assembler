@@ -58,7 +58,7 @@
           <li class="weekday-item">Monday</li>
           <li class="weekday-item">Tuesday</li>
           <li class="weekday-item">Wednesday</li>
-          <li class="weekday-item">Thursday</li>
+          <li class="weekday-item">Tuesday</li>
           <li class="weekday-item">Friday</li>
         </ul>
       </div>
@@ -69,8 +69,29 @@
        *
        * Add the event listener and finish the code of the function
        */
+      btn = document.querySelector('#replace_element')
+      btn.addEventListener('click', replaceElement )
+      let container = document.querySelector('.list-container')
 
-      function replaceElement() {}
+      
+
+      function replaceElement() {
+        let items = [...document.querySelectorAll('.weekday-item')]
+    
+        tuesday = items[1]  
+
+        let replaced = document.createElement('li')
+        replaced.innerText = 'replaced'.toUpperCase()
+        replaced.style.color = 'red'
+        replaced.classList.add('weekday-item')
+        items = [...document.querySelectorAll('.weekday-item')]
+        
+        if (tuesday.innerText === 'Tuesday'){
+          console.log(tuesday.innerText)
+          container.replaceChild(replaced, tuesday)
+        }
+
+      }
     </script>
     <script src="./__tests__/exercise-16.js"></script>
   </body>

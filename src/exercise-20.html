@@ -87,8 +87,19 @@
        *
        * Add the event listener and finish the code of the function
        */
+      let btn = document.getElementById('add_last_names')
+      btn.addEventListener('click', addLastNames )
 
-      function addLastNames() {}
+      // console.log(liArr)
+      function addLastNames() {
+        let liArr = [...document.querySelectorAll('li')].slice(1)
+        liArr.forEach (each => {
+          let surname = each.getAttribute('data-lastname')
+          if (!surname) return
+          each.textContent = each.textContent + " " + surname
+          each.removeAttribute('data-lastname')
+        })
+      }
     </script>
     <script src="./__tests__/exercise-20.js"></script>
   </body>

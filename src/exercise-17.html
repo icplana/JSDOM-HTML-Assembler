@@ -55,6 +55,10 @@
        *
        * Add the event listeners
        */
+
+      btn = document.getElementById('change_classes')
+      btn.addEventListener('mouseover', () => btn.classList.add('hovered'))
+      btn.addEventListener('mouseout', () => btn.classList.remove('hovered'))
     </script>
     <script src="./__tests__/exercise-17.js"></script>
   </body>

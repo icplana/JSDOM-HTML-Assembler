@@ -66,8 +66,22 @@
        *
        * Add the event listener and finish the code of the function
        */
+      let btn = document.querySelector('#clone_list')
+      btn.addEventListener('click', cloneList )
 
-      function cloneList() {}
+      let list = document.querySelector('.list-container')
+      let newList = list.cloneNode(true)
+      newList.id = 'new_list'
+
+      let container = document.querySelector('.ex-wrapper')
+
+      
+
+
+
+      function cloneList() {
+        container.appendChild(newList)
+      }
     </script>
     <script src="./__tests__/exercise-15.js"></script>
   </body>

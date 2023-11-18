@@ -31,6 +31,8 @@ function validateExercise20() {
       list.children[i].getAttribute("data-lastname") ||
       list.children[i].textContent !== names[i]
     ) {
+      console.log({atri: list.children[i].getAttribute('data-lastname')})
+      console.log({textCont: list.children[i].textContent})
       allGood = false;
     }
   }

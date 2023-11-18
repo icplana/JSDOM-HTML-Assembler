@@ -71,8 +71,20 @@
        *
        * Add the event listener and finish the code of the function
        */
+      let btn = document.querySelector('#add_element')
+      btn.addEventListener('click', addElement )
 
-      function addElement() {}
+      let li = document.createElement('li')
+      li.innerText = 'Monday'
+      li.classList.add('weekday-item')
+      function addElement() {
+
+        // let firstChild = document.querySelector('.weekday-item')
+        // firstChild.insertAdjacentElement("beforebegin", li )
+
+        let container = document.querySelector('.list-container')
+        container.insertAdjacentElement('afterbegin', li )
+      }
     </script>
     <script src="./__tests__/exercise-11.js"></script>
   </body>

@@ -45,9 +45,11 @@
        *
        * Add the event listener and finish the code of the function
        */
-
+      let img = document.querySelector('.img')
+      img.addEventListener('click', onImageClick )
       function onImageClick(event) {
         let newSrc = "./assets/img2.jpg";
+        event.target.setAttribute('src', newSrc)
       }
     </script>
     <script src="./__tests__/exercise-19.js"></script>

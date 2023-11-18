@@ -54,14 +54,36 @@
       <div class="ex-wrapper"></div>
     </div>
     <script>
+
       /**
        * JavaScript Exercises - 14
        *
        * Add the event listener and finish the code of the function
        */
+      // document.addEventListener('DOM')
 
+      let btn = document.querySelector('#add_list') 
+      btn.addEventListener('click', addList )
+      
+      
+      
       function addList() {
+        let container = document.querySelector('.ex-wrapper')
+        console.log(container.children.length)
         let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+        let ul = document.createElement('ul')
+        ul.classList.add( 'list-container' )
+
+        days.forEach( each => {
+          let li = document.createElement('li')
+          li.classList.add('weekday-item')
+          li.innerText = each
+          ul.appendChild( li )
+        })
+        if (container.children.length !== 0) return
+        container.appendChild(ul)
+        
+
       }
     </script>
     <script src="./__tests__/exercise-14.js"></script>
